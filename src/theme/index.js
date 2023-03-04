@@ -9,10 +9,14 @@ export const theme = extendTheme({
     darkblue: {
       brOne: '#242B47',
       brTwo: '#252B46',
+      brThree: '#393C4A',
       bgOne: '#1F2335',
       bgTwo: '#181C2E',
       bgThree: '#1C2031',
+      bgFour: '#1b1f30',
     },
+    red: '#E30325',
+    green: '#449352',
     yellow: '#e5b805',
   },
   fonts: {

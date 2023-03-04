@@ -17,7 +17,7 @@ import {
   MenuOptionGroup,
   MenuDivider,
 } from '@chakra-ui/react';
-import { ChevronDownIcon } from '@chakra-ui/icons';
+import { BiChevronDown } from 'react-icons/bi';
 export default function header() {
   return (
     <Container>
@@ -52,7 +52,7 @@ export default function header() {
               _hover={{ bg: 'transparent' }}
               _focus={{ boxShadow: 'none', bg: 'darkblue.bgThree' }}
               _active={{ boxShadow: 'none', bg: 'darkblue.bgThree' }}
-              rightIcon={<ChevronDownIcon />}
+              rightIcon={<BiChevronDown />}
             >
               Election Data
             </MenuButton>
