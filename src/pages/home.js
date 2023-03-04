@@ -7,7 +7,7 @@ import Members from 'components/members';
 import Zones from 'components/zones';
 
 // Chakra UI
-import { Stack, Box } from '@chakra-ui/react';
+import { Stack } from '@chakra-ui/react';
 
 export default function home() {
   const navList = [
@@ -32,6 +32,50 @@ export default function home() {
       name: 'veo platform',
     },
   ];
+
+  const color = {
+    red: '#E30325',
+    green: '#449352',
+    yellow: '#e5b805',
+    purple: '#A163BE',
+    grey: '#6D769D',
+    blue: '#2249D1',
+    teal: '#018796 ',
+  };
+
+  const data = [
+    {
+      name: 'North East',
+      amount: '3000',
+      color: color.green,
+    },
+    {
+      name: 'North West',
+      amount: '3000',
+      color: color.grey,
+    },
+    {
+      name: 'North Central',
+      amount: '3000',
+      color: color.purple,
+    },
+    {
+      name: 'South East',
+      amount: '3000',
+      color: color.teal,
+    },
+    {
+      name: 'South West',
+      amount: '3000',
+      color: color.red,
+    },
+    {
+      name: 'South South',
+      amount: '3000',
+      color: color.blue,
+    },
+  ];
+
   return (
     <>
       <Layout navList={navList}>
@@ -50,7 +94,7 @@ export default function home() {
             my="32px"
           >
             <ProgressBar progress={20} totalVotes={'168,912,222'} />
-            <Zones />
+            <Zones data={data} color={color} />
             <Members totalElectedMembers={'10,000'} male="9000" female="1000" />
           </Stack>
         </Container>

@@ -2,21 +2,7 @@ import React from 'react';
 //Components
 import Container from 'layouts/container';
 // Chakra UI
-import {
-  Stack,
-  Text,
-  Flex,
-  Badge,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-} from '@chakra-ui/react';
+import { Stack, Text, Flex, Badge, Button, Menu, MenuButton, MenuList, MenuItem, MenuDivider } from '@chakra-ui/react';
 import { BiChevronDown } from 'react-icons/bi';
 export default function header() {
   return (
@@ -42,7 +28,6 @@ export default function header() {
               borderColor="darkblue.brTwo"
               bg="darkblue.bgThree"
               color="white"
-              fontFam
               fontWeight="400"
               fontSize="14px"
               as={Button}

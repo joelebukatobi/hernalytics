@@ -18,6 +18,10 @@ export const theme = extendTheme({
     red: '#E30325',
     green: '#449352',
     yellow: '#e5b805',
+    purple: '#A163BE',
+    violet: '#6D769D',
+    blue: '#2249D1',
+    teal: '#018796 ',
   },
   fonts: {
     body: 'Jost, sans-serif',
