@@ -51,8 +51,8 @@ export default function Map() {
           <Icon as={GoDash} color="#666666" boxSize="6" />
         </Button>
       </Stack>
-      <Stack direction="row" align="end" w="99%">
-        <Box w="75%">
+      <Stack direction="row" justify="space-between" align="end" w="90%">
+        <Box w="80%">
           <svg width="100%" height="100%" viewBox={`0 0 ${svg.width} ${svg.height}`} transform={`scale(${scale})`}>
             {svg.elements}
           </svg>
