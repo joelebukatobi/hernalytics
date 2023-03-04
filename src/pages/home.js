@@ -5,6 +5,7 @@ import Container from 'layouts/container';
 import ProgressBar from 'components/progressBar';
 import Members from 'components/members';
 import Zones from 'components/zones';
+import Map from 'components/map';
 
 // Chakra UI
 import { Stack } from '@chakra-ui/react';
@@ -79,7 +80,9 @@ export default function home() {
   return (
     <>
       <Layout navList={navList}>
-        <Container className="container"></Container>
+        <Container className="container">
+          <Map />
+        </Container>
         <Container>
           <Stack
             gap="16px"

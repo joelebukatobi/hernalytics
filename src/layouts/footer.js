@@ -17,7 +17,7 @@ export default function footer() {
           <Box>
             <img src={`${Logo}`} alt="" />
             <Text mt="10px" fontSize="16px" textTransform="capitalize" color="#ffffff">
-              Isale Eko Avenue, Dolphin Estate, Ikoyi, Lagos, Nigeria
+              Isale Eko Avenue, Dolphin Estate, Ikoyi, Lagos, <br /> Nigeria
             </Text>
             <Text mt="10px" fontSize="16px" textTransform="capitalize" color="#ffffff">
               © 2022 Hernalytics
