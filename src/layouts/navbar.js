@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //Components
 import Container from 'layouts/container';
 // Chakra UI
@@ -25,7 +26,7 @@ export default function navbar({ navList }) {
               fontWeight="600"
               // fontFamily="Jost"
             >
-              {item.name}
+              <Link href="/#">{item.name}</Link>
             </Text>
           ))}
           <Stack direction="row" gap="4">
@@ -37,8 +38,8 @@ export default function navbar({ navList }) {
               borderRadius="4px"
               textTransform="uppercase"
               color="white"
-              // fontFamily="Jost"
               fontWeight="600"
+              _hover={{ color: 'black', bg: 'white' }}
             >
               Login
             </Button>
@@ -51,8 +52,8 @@ export default function navbar({ navList }) {
               borderRadius="4px"
               textTransform="uppercase"
               color="black"
-              // fontFamily="Jost"
               fontWeight="600"
+              _hover={{ color: 'black', bg: 'white' }}
             >
               Sign Up
             </Button>

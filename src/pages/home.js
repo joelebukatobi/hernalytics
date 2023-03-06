@@ -94,7 +94,8 @@ export default function home() {
             borderRadius="13px"
             bg="darkblue.bgFour"
             direction="row"
-            my="32px"
+            mt="32px"
+            mb="64px"
           >
             <ProgressBar progress={20} totalVotes={'168,912,222'} />
             <Zones data={data} color={color} />

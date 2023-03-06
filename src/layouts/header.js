@@ -4,6 +4,7 @@ import Container from 'layouts/container';
 import Select from 'elements/select';
 // Chakra UI
 import { Divider, Stack, Text, Flex, Badge } from '@chakra-ui/react';
+
 export default function header() {
   return (
     <Container>
@@ -34,7 +35,7 @@ export default function header() {
           />
         </Flex>
       </Stack>
-      <Divider borderColor="darkblue.brThree" />
+      <Divider my="32px" borderColor="darkblue.brThree" />
     </Container>
   );
 }

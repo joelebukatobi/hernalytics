@@ -26,7 +26,7 @@ export default function Map() {
     setScale(newScale);
   };
   return (
-    <Box
+    <Flex
       gap="16px"
       border="1px"
       borderColor="darkblue.brThree"
@@ -34,7 +34,7 @@ export default function Map() {
       h="100%"
       overflow="scroll"
       pt="32px"
-      pl="118px"
+      // pl="118px"
       pr="113px"
       pb="64px"
       borderRadius="13px"
@@ -42,6 +42,8 @@ export default function Map() {
       // onWheel={handleWheel}
       ref={canvasRef}
       position="relative"
+      direction="row"
+      justify="center"
     >
       <Stack position="absolute" top="56px" right="64px">
         <Button borderBottomRadius="0" borderTopRadius="4px" height="38px" width="38px" onClick={handleZoomIn}>
@@ -52,7 +54,7 @@ export default function Map() {
         </Button>
       </Stack>
       <Stack direction="row" justify="space-between" align="end" w="90%">
-        <Box w="80%">
+        <Box mx="auto" w="80%">
           <svg width="100%" height="100%" viewBox={`0 0 ${svg.width} ${svg.height}`} transform={`scale(${scale})`}>
             {svg.elements}
           </svg>
@@ -78,6 +80,6 @@ export default function Map() {
           </Flex>
         </Stack>
       </Stack>
-    </Box>
+    </Flex>
   );
 }
